@@ -1,0 +1,366 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BA67D805228012A000211510 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA67D804228012A000211510 /* AppDelegate.swift */; };
+		BA67D807228012A000211510 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA67D806228012A000211510 /* ViewController.swift */; };
+		BA67D80A228012A000211510 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA67D808228012A000211510 /* Main.storyboard */; };
+		BA67D80D228012A000211510 /* Lab2MovieNetwork.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BA67D80B228012A000211510 /* Lab2MovieNetwork.xcdatamodeld */; };
+		BA67D80F228012A100211510 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA67D80E228012A100211510 /* Assets.xcassets */; };
+		BA67D812228012A100211510 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA67D810228012A100211510 /* LaunchScreen.storyboard */; };
+		BA67D81A2280133F00211510 /* MyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA67D8192280133F00211510 /* MyTableViewController.swift */; };
+		BA67D81C2280218F00211510 /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA67D81B2280218F00211510 /* MyViewController.swift */; };
+		BA67D81E2280221B00211510 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA67D81D2280221B00211510 /* Movie.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BA67D801228012A000211510 /* Lab2MovieNetwork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lab2MovieNetwork.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA67D804228012A000211510 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BA67D806228012A000211510 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BA67D809228012A000211510 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BA67D80C228012A000211510 /* Lab2MovieNetwork.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Lab2MovieNetwork.xcdatamodel; sourceTree = "<group>"; };
+		BA67D80E228012A100211510 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BA67D811228012A100211510 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BA67D813228012A100211510 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA67D8192280133F00211510 /* MyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewController.swift; sourceTree = "<group>"; };
+		BA67D81B2280218F00211510 /* MyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
+		BA67D81D2280221B00211510 /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Movie.swift; path = ../../Lab2movieTableView/Lab2movieTableView/Movie.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BA67D7FE228012A000211510 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BA67D7F8228012A000211510 = {
+			isa = PBXGroup;
+			children = (
+				BA67D803228012A000211510 /* Lab2MovieNetwork */,
+				BA67D802228012A000211510 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BA67D802228012A000211510 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BA67D801228012A000211510 /* Lab2MovieNetwork.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BA67D803228012A000211510 /* Lab2MovieNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				BA67D804228012A000211510 /* AppDelegate.swift */,
+				BA67D806228012A000211510 /* ViewController.swift */,
+				BA67D808228012A000211510 /* Main.storyboard */,
+				BA67D81D2280221B00211510 /* Movie.swift */,
+				BA67D80E228012A100211510 /* Assets.xcassets */,
+				BA67D810228012A100211510 /* LaunchScreen.storyboard */,
+				BA67D813228012A100211510 /* Info.plist */,
+				BA67D80B228012A000211510 /* Lab2MovieNetwork.xcdatamodeld */,
+				BA67D8192280133F00211510 /* MyTableViewController.swift */,
+				BA67D81B2280218F00211510 /* MyViewController.swift */,
+			);
+			path = Lab2MovieNetwork;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BA67D800228012A000211510 /* Lab2MovieNetwork */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA67D816228012A100211510 /* Build configuration list for PBXNativeTarget "Lab2MovieNetwork" */;
+			buildPhases = (
+				BA67D7FD228012A000211510 /* Sources */,
+				BA67D7FE228012A000211510 /* Frameworks */,
+				BA67D7FF228012A000211510 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Lab2MovieNetwork;
+			productName = Lab2MovieNetwork;
+			productReference = BA67D801228012A000211510 /* Lab2MovieNetwork.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BA67D7F9228012A000211510 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = iti;
+				TargetAttributes = {
+					BA67D800228012A000211510 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = BA67D7FC228012A000211510 /* Build configuration list for PBXProject "Lab2MovieNetwork" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BA67D7F8228012A000211510;
+			productRefGroup = BA67D802228012A000211510 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BA67D800228012A000211510 /* Lab2MovieNetwork */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BA67D7FF228012A000211510 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA67D812228012A100211510 /* LaunchScreen.storyboard in Resources */,
+				BA67D80F228012A100211510 /* Assets.xcassets in Resources */,
+				BA67D80A228012A000211510 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BA67D7FD228012A000211510 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA67D80D228012A000211510 /* Lab2MovieNetwork.xcdatamodeld in Sources */,
+				BA67D807228012A000211510 /* ViewController.swift in Sources */,
+				BA67D81E2280221B00211510 /* Movie.swift in Sources */,
+				BA67D805228012A000211510 /* AppDelegate.swift in Sources */,
+				BA67D81C2280218F00211510 /* MyViewController.swift in Sources */,
+				BA67D81A2280133F00211510 /* MyTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BA67D808228012A000211510 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA67D809228012A000211510 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BA67D810228012A100211510 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA67D811228012A100211510 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BA67D814228012A100211510 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BA67D815228012A100211510 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BA67D817228012A100211510 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Lab2MovieNetwork/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ios.Lab2MovieNetwork;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BA67D818228012A100211510 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Lab2MovieNetwork/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ios.Lab2MovieNetwork;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BA67D7FC228012A000211510 /* Build configuration list for PBXProject "Lab2MovieNetwork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA67D814228012A100211510 /* Debug */,
+				BA67D815228012A100211510 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA67D816228012A100211510 /* Build configuration list for PBXNativeTarget "Lab2MovieNetwork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA67D817228012A100211510 /* Debug */,
+				BA67D818228012A100211510 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BA67D80B228012A000211510 /* Lab2MovieNetwork.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BA67D80C228012A000211510 /* Lab2MovieNetwork.xcdatamodel */,
+			);
+			currentVersion = BA67D80C228012A000211510 /* Lab2MovieNetwork.xcdatamodel */;
+			path = Lab2MovieNetwork.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = BA67D7F9228012A000211510 /* Project object */;
+}
