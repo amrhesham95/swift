@@ -7,19 +7,19 @@
 //
 
 import UIKit
-
+import CoreData
 class DetailsViewController: UIViewController {
     var name: String?
     var rating: String?
-    var genre: [String]?
+    var genre: String?
     var release:Int!
     var imgString:String?
-    func setLabels(obj:Movie){
-        name=obj.title
-        rating=obj.rating
-        genre=obj.genre
-        release=obj.releaseYear
-        imgString=obj.image
+    func setLabels(obj:NSManagedObject){
+        name=obj.value(forKey: "title") as! String
+        rating=obj.value(forKey: "rating") as! String
+        genre=obj.value(forKey: "genre") as! String
+        release=obj.value(forKey: "releaseYear") as! Int
+        imgString=obj.value(forKey: "imgString") as! String
         
     }
     @IBOutlet weak var imgView: UIImageView!

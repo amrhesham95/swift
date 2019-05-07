@@ -13,7 +13,7 @@
 		1F31C657227F2F8800278594 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F31C656227F2F8800278594 /* Assets.xcassets */; };
 		1F31C65A227F2F8800278594 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F31C658227F2F8800278594 /* LaunchScreen.storyboard */; };
 		1F31C662227F308A00278594 /* MyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F31C661227F308A00278594 /* MyTableViewController.swift */; };
-		1F31C664227F30DA00278594 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F31C663227F30DA00278594 /* Movie.swift */; };
+		1F31C664227F30DA00278594 /* MovieClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F31C663227F30DA00278594 /* MovieClass.swift */; };
 		1F31C666227F382900278594 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F31C665227F382900278594 /* DetailsViewController.swift */; };
 		1F31C668227F47F000278594 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1F31C667227F47EF00278594 /* 1.jpg */; };
 		1F31C66D227F49E600278594 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1F31C669227F49E500278594 /* 3.jpg */; };
@@ -22,6 +22,7 @@
 		1F31C670227F49E600278594 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1F31C66C227F49E500278594 /* 2.jpg */; };
 		1F31C672227F4BC300278594 /* AddingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F31C671227F4BC300278594 /* AddingViewController.swift */; };
 		1F31C674227F4F3F00278594 /* addingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F31C673227F4F3F00278594 /* addingProtocol.swift */; };
+		1F5926FD22819DF100D9D95E /* DataCoreDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1F5926FB22819DF100D9D95E /* DataCoreDemo.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +34,7 @@
 		1F31C659227F2F8800278594 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F31C65B227F2F8800278594 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F31C661227F308A00278594 /* MyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewController.swift; sourceTree = "<group>"; };
-		1F31C663227F30DA00278594 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		1F31C663227F30DA00278594 /* MovieClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieClass.swift; sourceTree = "<group>"; };
 		1F31C665227F382900278594 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		1F31C667227F47EF00278594 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
 		1F31C669227F49E500278594 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
@@ -42,6 +43,7 @@
 		1F31C66C227F49E500278594 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
 		1F31C671227F4BC300278594 /* AddingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddingViewController.swift; sourceTree = "<group>"; };
 		1F31C673227F4F3F00278594 /* addingProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addingProtocol.swift; sourceTree = "<group>"; };
+		1F5926FC22819DF100D9D95E /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,10 +88,11 @@
 				1F31C65B227F2F8800278594 /* Info.plist */,
 				1F31C661227F308A00278594 /* MyTableViewController.swift */,
 				1F31C667227F47EF00278594 /* 1.jpg */,
-				1F31C663227F30DA00278594 /* Movie.swift */,
+				1F31C663227F30DA00278594 /* MovieClass.swift */,
 				1F31C665227F382900278594 /* DetailsViewController.swift */,
 				1F31C671227F4BC300278594 /* AddingViewController.swift */,
 				1F31C673227F4F3F00278594 /* addingProtocol.swift */,
+				1F5926FB22819DF100D9D95E /* DataCoreDemo.xcdatamodeld */,
 			);
 			path = Lab2movieTableView;
 			sourceTree = "<group>";
@@ -172,7 +175,8 @@
 			files = (
 				1F31C652227F2F7F00278594 /* ViewController.swift in Sources */,
 				1F31C662227F308A00278594 /* MyTableViewController.swift in Sources */,
-				1F31C664227F30DA00278594 /* Movie.swift in Sources */,
+				1F31C664227F30DA00278594 /* MovieClass.swift in Sources */,
+				1F5926FD22819DF100D9D95E /* DataCoreDemo.xcdatamodeld in Sources */,
 				1F31C674227F4F3F00278594 /* addingProtocol.swift in Sources */,
 				1F31C650227F2F7F00278594 /* AppDelegate.swift in Sources */,
 				1F31C666227F382900278594 /* DetailsViewController.swift in Sources */,
@@ -374,6 +378,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1F5926FB22819DF100D9D95E /* DataCoreDemo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1F5926FC22819DF100D9D95E /* Model.xcdatamodel */,
+			);
+			currentVersion = 1F5926FC22819DF100D9D95E /* Model.xcdatamodel */;
+			path = DataCoreDemo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 1F31C644227F2F7F00278594 /* Project object */;
 }

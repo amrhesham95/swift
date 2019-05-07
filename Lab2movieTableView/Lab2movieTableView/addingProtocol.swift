@@ -8,5 +8,5 @@
 
 import Foundation
 protocol addingProtocol {
-    func addMovie(movie:Movie)
+    func addMovie(movie:MovieClass)
 }

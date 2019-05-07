@@ -22,8 +22,11 @@ class AddingViewController: UIViewController {
         release=Int(yearTF.text!)
         genre=genreTF.text
         var genreArray:[String]
+        genreArray=[]
         genreArray.append(genre!)
-        let newMovie=Movie(title: name!, image: imgString!, rating: rating!, releaseYear: release, genre: genreArray)
+        let newMovie=MovieClass(title: name!, image: imgString!, rating: rating!, releaseYear: release, genre: genreArray)
+        sentProtocol.addMovie(movie: newMovie)
+        
     }
     @IBOutlet weak var imageTF: UITextField!
     @IBOutlet weak var genreTF: UITextField!
@@ -32,6 +35,7 @@ class AddingViewController: UIViewController {
     @IBOutlet weak var titleTF: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 
         // Do any additional setup after loading the view.
     }
