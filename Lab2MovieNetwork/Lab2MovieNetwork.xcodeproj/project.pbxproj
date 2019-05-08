@@ -16,6 +16,7 @@
 		BA67D81A2280133F00211510 /* MyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA67D8192280133F00211510 /* MyTableViewController.swift */; };
 		BA67D81C2280218F00211510 /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA67D81B2280218F00211510 /* MyViewController.swift */; };
 		BA67D81E2280221B00211510 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA67D81D2280221B00211510 /* Movie.swift */; };
+		BA98DB8822835F9000824E63 /* holder.png in Resources */ = {isa = PBXBuildFile; fileRef = BA98DB8722835F9000824E63 /* holder.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		BA67D8192280133F00211510 /* MyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewController.swift; sourceTree = "<group>"; };
 		BA67D81B2280218F00211510 /* MyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
 		BA67D81D2280221B00211510 /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Movie.swift; path = ../../Lab2movieTableView/Lab2movieTableView/Movie.swift; sourceTree = "<group>"; };
+		BA98DB8722835F9000824E63 /* holder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = holder.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				BA67D808228012A000211510 /* Main.storyboard */,
 				BA67D81D2280221B00211510 /* Movie.swift */,
 				BA67D80E228012A100211510 /* Assets.xcassets */,
+				BA98DB8722835F9000824E63 /* holder.png */,
 				BA67D810228012A100211510 /* LaunchScreen.storyboard */,
 				BA67D813228012A100211510 /* Info.plist */,
 				BA67D80B228012A000211510 /* Lab2MovieNetwork.xcdatamodeld */,
@@ -137,6 +140,7 @@
 				BA67D812228012A100211510 /* LaunchScreen.storyboard in Resources */,
 				BA67D80F228012A100211510 /* Assets.xcassets in Resources */,
 				BA67D80A228012A000211510 /* Main.storyboard in Resources */,
+				BA98DB8822835F9000824E63 /* holder.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

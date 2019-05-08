@@ -7,26 +7,69 @@
 //
 
 import UIKit
-
+import CoreData
+import NetworkExtension
 class MyTableViewController: UITableViewController {
-    var movieArray:[Movie]!
+    //var movieMangedObjects=[NSManagedObject]()
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        let appDelegate=UIApplication.shared.delegate as! AppDelegate
+        let managerContext=appDelegate.persistentContainer.viewContext
+//        let fetchRequest=NSFetchRequest<NSManagedObject>(entityName: "MovieDB")
+//        do{
+//            movieArray=try managerContext.fetch(fetchRequest)
+//            
+//        }catch{
+//            print("error while fetching")
+//        }
+        
+    }
+    var movieArray=[NSManagedObject]()
     var jsonArray:[Dictionary<String,Any>]?
     override func viewDidLoad() {
-        movieArray=[];
+        let appDelegate=UIApplication.shared.delegate as! AppDelegate
+        let managerContext=appDelegate.persistentContainer.viewContext
+        jsonArray=[Dictionary<String,Any>]()
+        
+        let fetchRequest=NSFetchRequest<NSManagedObject>(entityName: "MovieDB")
+        do{
+            movieArray=try managerContext.fetch(fetchRequest)
+            
+        }catch{
+            print("error while fetching")
+        }
+        
         let url=URL(string: "https://api.androidhive.info/json/movies.json")
         let request=URLRequest(url: url!)
         let session=URLSession(configuration: URLSessionConfiguration.default)
         let task=session.dataTask(with: request) { (data, response, error) in
             do{
+                let entity=NSEntityDescription.entity(forEntityName: "MovieDB", in: managerContext)
                 self.jsonArray = try JSONSerialization.jsonObject(with: data!, options: .allowFragments) as!Array<Dictionary<String,Any>>
+                
                 for item in self.jsonArray!{
+                    let movie=NSManagedObject(entity: entity!, insertInto: managerContext)
                     var numberYear = item["releaseYear"] as! NSNumber
                     var intYear=numberYear.intValue
                     
                     var numberRating = item["rating"]as!NSNumber
                     var ratingString=numberRating.stringValue
-                    var movieObj=Movie(title: item["title"] as! String, image:item["image"] as! String, rating: ratingString, releaseYear:intYear, genre: item["genre"] as! [String])
-                    self.movieArray.append(movieObj)
+                    var movieObj=Movie(title: item["title"] as! String, image:item["image"] as! String, rating: Float(item["rating"] as! NSNumber), releaseYear:intYear, genre: item["genre"] as! [String])
+                    movie.setValue(movieObj.title, forKey: "title")
+                    movie.setValue(movieObj.genre.description, forKey: "genre")
+                    movie.setValue(movieObj.rating, forKey: "rating")
+                    movie.setValue(movieObj.releaseYear, forKey: "releaseYear")
+                    movie.setValue(movieObj.image, forKey: "imgString")
+                    do{
+                        try managerContext.save()
+                        self.movieArray.append(movie)
+                        DispatchQueue.main.async {
+                            self.tableView.reloadData()
+                        }
+                    }catch{
+                            print("error while adding to DB!")
+                    }
+                    
                 }
                 
             }catch{
@@ -34,7 +77,10 @@ class MyTableViewController: UITableViewController {
             }
             
         }
+        if(movieArray.count==0){
             task.resume()
+            print("downloading....")
+        }
           super.viewDidLoad()
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -58,15 +104,16 @@ class MyTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         
-        return (jsonArray?.count)!
+        return (movieArray.count)
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        var dict=Dictionary<String, Any>();
-        dict=jsonArray![indexPath.row]
-        cell.textLabel?.text=dict["title"] as! String
+        cell.textLabel?.text = movieArray[indexPath.row].value(forKey: "title") as! String
+//        var dict=Dictionary<String, Any>();
+//        dict=jsonArray![indexPath.row]
+//        dict["title"] as! String
         // Configure the cell...
 
         return cell
@@ -115,7 +162,7 @@ class MyTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if(segue.destination.restorationIdentifier=="myViewController"){
             let secondVC=segue.destination as! MyViewController
-            secondVC.setLabels(obj:movieArray![(self.tableView.indexPathForSelectedRow?.row)!])
+            secondVC.setLabels(obj:movieArray[(self.tableView.indexPathForSelectedRow?.row)!])
             
             
         // Get the new view controller using segue.destinationViewController.
